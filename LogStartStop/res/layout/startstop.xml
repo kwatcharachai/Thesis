@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Put Number for Setting Log Name" />
+
+    <EditText
+        android:id="@+id/editLogName"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textResultPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percent Results" />
+
+    <TextView
+        android:id="@+id/textResultCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count Results" />
+
+    <TextView
+        android:id="@+id/loopCollect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Loop Count" />
+
+    <TextView
+        android:id="@+id/textLoopCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count Loop Check" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Log" />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Log" />
+
+    <Button
+        android:id="@+id/S_BackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+</LinearLayout>
