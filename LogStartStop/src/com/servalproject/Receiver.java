@@ -23,6 +23,7 @@ public class Receiver extends BroadcastReceiver {
 	public static long TotalStartCount =0;
 	public static long TotalStopCount =0;
 	public static long AllTotalTime =0;
+	public static long ExperimentStartTime = 0;
 
 	public static void logResults() {
 		String PowerName = "powerstats.txt";
@@ -101,6 +102,7 @@ public class Receiver extends BroadcastReceiver {
 		TotalStartCount=0;
 		TotalStopCount=0;
 		AllTotalTime = 0;
+		ExperimentStartTime = System.currentTimeMillis();
 	}
 
 	@Override

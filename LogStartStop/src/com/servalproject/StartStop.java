@@ -566,16 +566,16 @@ public void stopServal1() {
 		    					
 		    						isStart = false;
 		    						isStop = false;
-		    			        
-		    						// We allow a brief delay to make sure that we can communicate 
-		    						// with the phone that has the IOIO board connected.
-		    						RestTime();
+		    			        		    						
+		    						RunSingleExperiment();
 		    				}
 		    				
 		               }
 		        });
 		    		
 		    }};
+		    // Allow 3 seconds for network to settle, and then run the experiment
+		    // we have specified above.
 	        timer.schedule(scanTask,3000); 
 	     
     	}
@@ -583,8 +583,9 @@ public void stopServal1() {
      }
      
     
-    // Rest Time before go to doWiFiSet
-     public void RestTime()
+    // Run a single experiment.  Start and Stop will have been specified by the caller,
+    // so we can just call the necessary actions.
+     public void RunSingleExperiment()
      {
      	if(true)
      	{
@@ -592,12 +593,20 @@ public void stopServal1() {
  		    	public void run() {
  		    		handler.post(new Runnable() {
  		    			public void run(){
+ 		    				// Reset log information, and record start time of this experiment.
  		    				Receiver.reset();
+ 		    				
+ 		    				// Setup intent handlers 
  		    				Intent intentLoop = new Intent(context, LogService.class);
     						startService(intentLoop);
- 		    				//doWifiScanSet();
+    						
+    						// Ask Serval Mesh to start ad-hoc mode
     						start();
+    						
+    						// Now run the remainder of the experiment? How does this actually work?
     						doWifiScan();
+    						
+    						// XXX - Here we should perform end of experiment steps 
  		               }
  		        });
  		    		
