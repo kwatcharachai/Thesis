@@ -567,6 +567,8 @@ public void stopServal1() {
 		    						isStart = false;
 		    						isStop = false;
 		    			        
+		    						// We allow a brief delay to make sure that we can communicate 
+		    						// with the phone that has the IOIO board connected.
 		    						RestTime();
 		    				}
 		    				
