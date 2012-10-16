@@ -32,7 +32,7 @@ public class log {
 		logEndTime=0;
 		currentState=-1;
 		currentStateBegan=0;
-		for(int i=0;i<4;i++) stateTimes[i]=0;
+		for(int i=0;i<4;i++) { stateTimes[i]=0; stateCounts[i]=0; }
 	}
 	
 	public static void logBegin() 
