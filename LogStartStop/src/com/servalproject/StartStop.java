@@ -395,61 +395,6 @@ public void startServal() {
 
      }
     
-/*public void stopServal() {
-		
-    		doStopServalChargeStop();		
-
-	}
-    
-    
-    public void doStopServalChargeStop()
-    {
-    	if(true)
-    	{
-		    scanTask = new TimerTask() {
-		    	public void run() {
-		    		handler.post(new Runnable() {
-		    			public void run(){
-		    				Intent mIntent = new Intent("org.servalproject.ACTION_STOP_SERVAL");
-		    	    		startService(mIntent);
-		    	    		doStopServalChargeRest();
-		               }
-		        });
-		    		
-		    }};
-	        timer.schedule(scanTask,5000); 
-	     
-    	}
-
-     }
-    
-    public void doStopServalChargeRest()
-    {
-    	if(true)
-    	{
-		    scanTask = new TimerTask() {
-		    	public void run() {
-		    		handler.post(new Runnable() {
-		    			public void run(){
-		    				StartChargeService();
-		               }
-		        });
-		    		
-		    }};
-	        timer.schedule(scanTask,5000); 
-	     
-    	}
-
-     }
-    
-    public void StartChargeService(){
-		
-			Intent mIntent = new Intent("org.servalproject.ACTION_START_SERVAL");
-			startService(mIntent);
-			doStartServalCharge();
-		
-	}*/
-    
   // Start and Stop Serval  
     public void doStartServalCharge()
     {
