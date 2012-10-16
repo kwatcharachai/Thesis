@@ -13,6 +13,7 @@ import android.os.PowerManager;
 import android.util.Log;
 import android.widget.Toast;
 
+// a comment
 public class LogService extends Service {
 	private static final String LOG_TAG = "LOGSERVICE";
 	public static final String WIFI_MODE_ACTION = "org.servalproject.WIFI_MODE";
