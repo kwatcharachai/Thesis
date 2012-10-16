@@ -49,8 +49,10 @@ public class log {
 			stateTimes[currentState]+=currentStateInterval;
 		}
 		currentStateBegan=now;
-		currentState=newState;
-		stateCounts[newState]++;
+		if (newState>=0) {
+			currentState=newState;
+			stateCounts[newState]++;
+		}
 	}
 	
 	public static void logWiFiTurnedOn() 
