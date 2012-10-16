@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+/Users/watcharachai/Thesis/energy_consumption_measurement/.metadata/.plugins/org.eclipse.jdt.core
+378574428.index

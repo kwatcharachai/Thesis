@@ -1,0 +1,16 @@
+0. Install Android SDK and Android NDK
+
+NDK must be downloaded separately from:
+
+http://dl.google.com/android/ndk/
+
+and then installed somewhere.
+
+1. Make sure that ~/Eclipse/android-sdk-mac_x86/platform-tools/ and XXX-NDK-BUILD-PATH are in the PATH variable in your ~/.profile directory.
+
+2. Get batphone source code to use as basis of energy measurement framework:
+git clone git://github.com/servalproject/batphone.git -b wifi-autodetect
+
+3. Build batphone for the first time:
+cd batphone
+./BUILD.txt
